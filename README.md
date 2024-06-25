@@ -150,9 +150,25 @@ http://localhost:8080/usuarios/registro
 }
 ```
 #### Con estos datos declarados como obligatorios y en el caso del email como unico, se crea un objeto de tipo "Usuario" el cual a su vez creara un objeto de tipo "Perfil" con el nombre proporcionado. De manera interna dentro de la creacion del usuario se realiza la encriptacion de la contrasena al tipo Bcrypt y de esta forma se agrega a la base de datos.
+
+- #### Login de usuario para obtener token de seguridad (WJT).
+#### La siguiente ruta permite el login de un usuario enviando los datos de inicio de sesion, para este proyecto decidi que los datos de inicio de sesion fueran el email y contrasena del usuario:
+```
+http://localhost:8080/login
+
+{
+	"email": "usuario@gmail.com",
+	"clave":"contrasenax"
+}
+```
+#### El servicio de autenticacion realizara las validaciones comprobando que se trate de un usuario registrado en la base de datos y convertira el valor de la clave ingresado en el login a un tipo encriptrado en Bcrypt para poder compararlo con la contrasena guardado en la base de datos.
+#### Una vez autenticado el servicio de autenticacion devolvera un token que servira para poder hacer uso de todas las rutas de topicos y preguntas. Las rutas excluidas del filtro de seguridad y que seran siempre accesibles sin necesidad de autenticarse son: Registro de usuario, login, actualizacion de usuario.
+
    - #### Actualizacion de un usuario.
+#### EN CONSTRUCCION
    - #### Eliminacion logica de un usuario.
-   - #### Login de usuario para obtener token de seguridad (WJT).
+#### EN CONSTRUCCION
+
 
 ## Tecnologias utilizadas
 * JAVA
