@@ -169,8 +169,8 @@ http://localhost:8080/login
 ```
 http://localhost:8080/usuarios/recuperacion
 {
-	"email":"ax.ajmb.4u@gmail.com",
-	"nuevaContrasena":"654321"
+	"email":"usuario@gmail.com",
+	"nuevaContrasena":"contrasena2"
 }
 ```
 #### Una vez que se reciben estos datos y no son nulos, el servicio de usuarios valida que exista un usuario con el email proporcionado y ejecuta la actualizacion de la contrasena encriptandolo en bcrypt previamente.
