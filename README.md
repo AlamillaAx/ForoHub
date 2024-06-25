@@ -25,7 +25,10 @@
 ## :hammer:Funcionalidades del proyecto
 
 <p>Para este proyecto se siguio la maquetacion de estructura de datos relacional propuesta por Alura LATAM, que consistia en las siguientes relaciones:</p>
-![diagrama_base_de_datos_forohub.png](..%2F..%2F..%2F..%2FDownloads%2Fdiagrama_base_de_datos_forohub.png)
+
+<p align="center"><img src="https://github.com/AlamillaAx/ForoHub/assets/86985427/2310bc96-29bd-4404-8c85-7c37fcc6da34"></p>
+
+
 ## Tecnologias utilizadas
 * JAVA
 * SPRING FRAMEWORK
