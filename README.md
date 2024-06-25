@@ -2,8 +2,9 @@
   <h1 align="center">
     FORO-HUB
   </br>
-      <img src="https://github.com/AlamillaAx/MoneyMorpher/assets/86985427/25052099-3bc3-4854-b661-4c821f4c36c0" alt="MoneyMorpher">
+      <img src="https://github.com/AlamillaAx/ForoHub/assets/86985427/503b1e3b-36ce-4e0f-92f3-25b3bae1ffbf" alt="ForoHub">
   </h1>
+
 </div>
 <div>
   <p align="left">
