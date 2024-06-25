@@ -164,10 +164,17 @@ http://localhost:8080/login
 #### El servicio de autenticacion realizara las validaciones comprobando que se trate de un usuario registrado en la base de datos y convertira el valor de la clave ingresado en el login a un tipo encriptrado en Bcrypt para poder compararlo con la contrasena guardado en la base de datos.
 #### Una vez autenticado el servicio de autenticacion devolvera un token que servira para poder hacer uso de todas las rutas de topicos y preguntas. Las rutas excluidas del filtro de seguridad y que seran siempre accesibles sin necesidad de autenticarse son: Registro de usuario, login, actualizacion de usuario.
 
-   - #### Actualizacion de un usuario.
-#### EN CONSTRUCCION
-   - #### Eliminacion logica de un usuario.
-#### EN CONSTRUCCION
+   - #### Recuperacion de la contrasena de un usuario.
+#### Para esta funcionalidad se realiza una solicitud del tipo PUT para actualizar la contrasena de un usuario. A traves del siguiente mapeo obtendremos el cuerpo de la solicitud en formato JSON con el email y la nueva contrasena para el usuario:
+```
+http://localhost:8080/usuarios/recuperacion
+{
+	"email":"ax.ajmb.4u@gmail.com",
+	"nuevaContrasena":"654321"
+}
+```
+#### Una vez que se reciben estos datos y no son nulos, el servicio de usuarios valida que exista un usuario con el email proporcionado y ejecuta la actualizacion de la contrasena encriptandolo en bcrypt previamente.
+
 
 
 ## Tecnologias utilizadas

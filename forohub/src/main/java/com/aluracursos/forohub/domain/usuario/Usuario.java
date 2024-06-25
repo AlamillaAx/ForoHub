@@ -80,4 +80,7 @@ public class Usuario implements UserDetails {
         return passwordEncoder.encode(rawPassword);
     }
 
+    public void actualizarContrasena(String nuevaContrasena) {
+        this.contrasena = convertToBcrypt(nuevaContrasena);
+    }
 }
